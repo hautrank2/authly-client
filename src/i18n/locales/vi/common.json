@@ -1,0 +1,40 @@
+{
+  "appName": "Authly",
+  "language": "Ngôn ngữ",
+  "nav": {
+    "dashboard": "Tổng quan",
+    "users": "Người dùng",
+    "profile": "Hồ sơ",
+    "settings": "Cài đặt"
+  },
+  "pages": {
+    "dashboard": {
+      "title": "Tổng quan",
+      "subtitle": "Tổng quan về tài khoản và hoạt động của bạn."
+    },
+    "users": {
+      "title": "Người dùng",
+      "subtitle": "Quản lý người dùng và quyền truy cập."
+    },
+    "profile": {
+      "title": "Hồ sơ",
+      "subtitle": "Thông tin cá nhân của bạn."
+    },
+    "settings": {
+      "title": "Cài đặt",
+      "subtitle": "Tùy chỉnh các thiết lập của bạn."
+    },
+    "notFound": {
+      "title": "Không tìm thấy trang",
+      "subtitle": "Trang bạn đang tìm không tồn tại.",
+      "back": "Về trang tổng quan"
+    }
+  },
+  "actions": {
+    "submit": "Gửi",
+    "cancel": "Hủy",
+    "save": "Lưu",
+    "login": "Đăng nhập",
+    "logout": "Đăng xuất"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "appName": "Authly",
+  "language": "Language",
+  "nav": {
+    "dashboard": "Dashboard",
+    "users": "Users",
+    "profile": "Profile",
+    "settings": "Settings"
+  },
+  "pages": {
+    "dashboard": {
+      "title": "Dashboard",
+      "subtitle": "Overview of your account and activity."
+    },
+    "users": {
+      "title": "Users",
+      "subtitle": "Manage users and their access."
+    },
+    "profile": {
+      "title": "Profile",
+      "subtitle": "Your personal information."
+    },
+    "settings": {
+      "title": "Settings",
+      "subtitle": "Configure your preferences."
+    },
+    "notFound": {
+      "title": "Page not found",
+      "subtitle": "The page you are looking for does not exist.",
+      "back": "Back to dashboard"
+    }
+  },
+  "actions": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "login": "Log in",
+    "logout": "Log out"
+  }
+}

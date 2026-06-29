@@ -4,9 +4,11 @@ set -e
 
 echo "🚀 Starting deployment..."
 
-# Pull latest code
+# Ensure we're on main branch and pull latest code
 echo "📥 Pulling latest code..."
-git pull origin main
+git fetch origin
+git checkout main
+git reset --hard origin/main
 
 # Build and run Docker containers
 echo "🐳 Building and starting Docker containers..."

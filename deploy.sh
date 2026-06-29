@@ -4,9 +4,6 @@ set -e
 
 echo "🚀 Starting deployment..."
 
-# Navigate to project directory
-cd /home/ubuntu/authly-client
-
 # Pull latest code
 echo "📥 Pulling latest code..."
 git pull origin main

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -e
+
+echo "🚀 Starting deployment..."
+
+# Navigate to project directory
+cd /home/ubuntu/authly-client
+
+# Pull latest code
+echo "📥 Pulling latest code..."
+git pull origin main
+
+# Build and run Docker containers
+echo "🐳 Building and starting Docker containers..."
+docker-compose down || true
+docker-compose up -d --build
+
+echo "✅ Deployment completed successfully!"
+echo "🌐 App is running on port 3004"

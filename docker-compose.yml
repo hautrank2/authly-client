@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  authly-client:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: authly-client
+    ports:
+      - "3004:5173"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - authly-network
+
+networks:
+  authly-network:
+    driver: bridge

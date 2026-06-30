@@ -2,18 +2,25 @@ version: '3.8'
 
 services:
   authly-client:
+    container_name: authly-client
+    image: authly/client:latest
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: authly-client
     ports:
       - "3004:5173"
-    restart: unless-stopped
-    environment:
-      - NODE_ENV=production
     networks:
       - authly-network
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "3"
+    environment:
+      - NODE_ENV=production
 
 networks:
   authly-network:
+    name: authly-network
     driver: bridge
